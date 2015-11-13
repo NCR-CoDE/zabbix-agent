@@ -6,9 +6,9 @@
 #
 
 connection_info = {
-  url: "http://#{zabbix_server['zabbix']['web']['fqdn']}/api_jsonrpc.php",
-  user: zabbix_server['zabbix']['web']['login'],
-  password: zabbix_server['zabbix']['web']['password']
+  url: "http://#{node['zabbix']['web']['fqdn']}/api_jsonrpc.php",
+  user: node['zabbix']['web']['login'],
+  password: node['zabbix']['web']['password']
 }
 
 ip_address = node['ipaddress']
